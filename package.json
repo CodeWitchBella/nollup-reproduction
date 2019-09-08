@@ -1,0 +1,29 @@
+{
+    "scripts": {
+        "clean": "rm -rf dist",
+        "start": "cross-env NODE_ENV=development node ../../lib/cli.js -c --hot --content-base public --port 9001",
+        "build": "npm run clean && cross-env NODE_ENV=production rollup -c"
+    },
+    "dependencies": {
+        "graphql": "^14.5.4",
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0",
+        "subscriptions-transport-ws": "^0.9.16"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.5.5",
+        "@babel/preset-react": "^7.0.0",
+        "cross-env": "^5.2.0",
+        "nollup": "^0.7.1",
+        "react-hot-loader": "^4.12.11",
+        "rollup": "^1.20.1",
+        "rollup-plugin-babel": "^4.3.3",
+        "rollup-plugin-commonjs-alternate": "0.0.6",
+        "rollup-plugin-hot-css": "0.0.6",
+        "rollup-plugin-ignore": "^1.0.5",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-replace": "^2.2.0",
+        "rollup-plugin-static-files": "0.0.1",
+        "rollup-plugin-terser": "^5.1.1"
+    }
+}
