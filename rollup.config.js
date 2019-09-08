@@ -30,7 +30,8 @@ let config = {
             namedExports: {
                 'node_modules/react/index.js': [
                     'Component'
-                ]
+                ],
+                'node_modules/subscriptions-transport-ws/dist/index.js': ['SubscriptionClient'],
             }
         }),
     ]
